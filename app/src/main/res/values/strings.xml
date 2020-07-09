@@ -2,4 +2,9 @@
     <string name="app_name">YSLauncher</string>
 
     <string name="activity_not_found">Activity not found!</string>
+
+    <string name="dialog_title">Whether to uninstall the application</string>
+    <string name="dialog_warn">Are you sure to uninstall？</string>
+    <string name="ok">Confirm</string>
+    <string name="cancel">Cancel</string>
 </resources>

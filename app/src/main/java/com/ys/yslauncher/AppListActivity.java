@@ -88,11 +88,11 @@ public class AppListActivity extends Activity implements AdapterView.OnItemClick
         //    设置Title的图标
 //        builder.setIcon(R.drawable.ic_launcher);
         //    设置Title的内容
-        builder.setTitle("是否卸载该应用");
+        builder.setTitle(getString(R.string.dialog_title));
         //    设置Content来显示一个信息
-        builder.setMessage("确定卸载吗？");
+        builder.setMessage(getString(R.string.dialog_warn));
         //    设置一个PositiveButton
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (appInfo != null) {
@@ -104,7 +104,7 @@ public class AppListActivity extends Activity implements AdapterView.OnItemClick
             }
         });
         //    设置一个NegativeButton
-        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 builder.create().dismiss();
